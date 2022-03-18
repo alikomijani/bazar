@@ -5,50 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>دیوار</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <header class="container">
-            <div class="d-flex">
-                <div class="logo d-lg-none">
-                    <img src="images/bazaar-logo.svg" alt="">
-                </div>
-                <div class="d-lg-none">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#">برنامه</a></li>
-                        <li class="menu__item"><a href="#">بازی</a></li>
-                        <li class="menu__item"><a href="#">توسعه دهندگان بازار</a> </li>
-                        <li class="menu__item"><a href="#">پشتیبانی</a></li>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__container">
+                    <div class="navbar__content">
+                        <div class="navbar__logo">
+                            <img src="images/bazaar-logo.svg" alt="">
+                        </div>
+                        <ul class="tab menu">
+                            <li class="tab__item tab__item--select">
+                                <a>برنامه</a>
+                            </li>
+                            <li class="tab__item">
+                                <a>بازی</a>
+                            </li>
+                            <li class="tab__item">
+                                <a>توسعه دهندگان بازار</a>
+                            </li>
+                            <li class="tab__item">
+                                <a>پشتیبانی</a>
+                            </li>
+                        </ul>
+                        <div class="navbar__menu-bar">
+                            <span class=" icon-button">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </div>
+                        <div class="navbar__fill-gap"></div>
+                        <div class="navbar__search input">
+                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="SearchInput__icon">
+                                <path
+                                    d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z"
+                                    fill="#717485"></path>
+                            </svg>
+                            <input aria-label="search" placeholder="جست‌وجو در بازار" type="text" />
+                        </div>
+                        <div>
+                            <span class="icon-button profile-icon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+
+                        <a href="#" class="navbar__btn btn btn-primary ">
+                            دانلود بازار
+                        </a>
+                        <div class="more-icon">
+                            <span class="icon-button ">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                        </div>
+
+                    </div>
+                    <ul class="tab">
+                        <li class="tab__item tab__item--select">
+                            <a>برای شما</a>
+                        </li>
+                        <li class="tab__item">
+                            <a>دسته بندی ها</a>
+                        </li>
+                        <li class="tab__item">
+                            <a>کودک</a>
+                        </li>
                     </ul>
                 </div>
-
-                <div class="accounts">
-                    <div class="input-width-icon">
-                        <input aria-label="search" placeholder="جستجو در بازار" type="text" />
-                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="SearchInput__icon">
-                            <path
-                                d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z"
-                                fill="#717485"></path>
-                        </svg>
-                    </div>
-                    <span class="icon-button">
-                        <i class="fas fa-user"></i>
-                    </span>
-                    <a href="#" class="btn btn-primary d-lg-none">دانلود از کافه بازار</a>
-                    <span class="icon-button menu-bar">
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                    <span class="icon-button d-lg-none">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </span>
-                </div>
             </div>
-        </header>
-    </nav>
+        </nav>
+    </header>
+
     <script src="https://kit.fontawesome.com/5a4b958152.js" crossorigin="anonymous"></script>
 </body>
 
