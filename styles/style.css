@@ -47,7 +47,6 @@
 @media screen and (min-width: 640px) {
   .container {
     min-width: 600px;
-    padding: 0 15px;
   }
 }
 /* Tablet */
@@ -232,6 +231,7 @@
 }
 
 .icon-button {
+  outline: none;
   align-items: center;
   border-radius: 50%;
   color: #999;
@@ -246,7 +246,9 @@
 .icon-button:hover {
   background-color: #f5f5f5;
 }
-
+.icon-button:focus {
+  outline: none;
+}
 /* Input */
 .input {
   align-items: center;
@@ -303,5 +305,69 @@
   }
   .menu-bar {
     display: inline-flex;
+  }
+}
+
+/* BurgerMenu */
+.BurgerMenu {
+  background-color: white;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: -43px;
+  z-index: 2;
+  min-height: calc(100vh - 56px);
+  padding: 0 10px;
+  transition: all ease 0.3s;
+}
+
+.BurgerMenu--hidden {
+  min-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.BurgerMenu__logo {
+  width: 87px;
+}
+.BurgerMenu__items {
+  padding: 0;
+  list-style: none;
+}
+.BurgerMenu__item {
+  padding: 8px;
+  margin-bottom: 4px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BurgerMenu__item .fas {
+  color: #2a2a2a;
+}
+.BurgerMenu__item a {
+  color: unset;
+  text-decoration: none;
+}
+.BurgerMenu__item a:visited {
+  color: unset;
+  text-decoration: none;
+}
+.BurgerMenu__footer {
+  position: fixed;
+  bottom: 5px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .BurgerMenu {
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
   }
 }
