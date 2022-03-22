@@ -26,6 +26,8 @@
 }
 :root {
   --color-primary: #0ea960;
+  --text-primary: #2a2a2a;
+  --text-secondary: #8a8a8a;
   font-family: YekanBakh, "iran sans";
   direction: rtl;
   font-size: 62.5%;
@@ -36,6 +38,14 @@
 }
 * {
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 /* Containers */
 .container {
@@ -316,7 +326,7 @@
   right: 0;
   top: -43px;
   z-index: 2;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 100px);
   padding: 0 10px;
   transition: all ease 0.3s;
 }
@@ -344,7 +354,7 @@
 }
 
 .BurgerMenu__item .fas {
-  color: #2a2a2a;
+  color: var(--text-primary);
 }
 .BurgerMenu__item a {
   color: unset;
@@ -355,14 +365,14 @@
   text-decoration: none;
 }
 .BurgerMenu__footer {
-  position: fixed;
-  bottom: 5px;
+  bottom: 0;
   display: flex;
+  font-size: 2rem;
   gap: 30px;
   justify-content: center;
-  right: 0;
   left: 0;
-  font-size: 2rem;
+  position: absolute;
+  right: 0;
 }
 @media screen and (min-width: 1024px) {
   .BurgerMenu {
@@ -370,4 +380,36 @@
     height: 0;
     overflow: hidden;
   }
+}
+
+/* Apps */
+.app {
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  max-width: calc(31vw - 2rem);
+  text-decoration: none;
+  width: calc(31vw - 2rem);
+}
+.app__image {
+  width: 100%;
+}
+.app__image img {
+  width: 100%;
+  border-radius: 22px;
+}
+.app__title {
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app__description {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
