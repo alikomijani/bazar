@@ -138,6 +138,7 @@ ul {
   padding: 0 8px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .navbar__search {
   margin-left: 8px;
@@ -212,7 +213,7 @@ ul {
     color: unset;
   }
   .tab.menu .tab__item--select::after {
-    bottom: -12px;
+    bottom: -15px;
   }
   .navbar__menu-bar {
     display: none;
@@ -566,7 +567,6 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   overflow-x: auto;
-  scroll-behavior: smooth;
   width: 100%;
   padding: 5px 0;
 }
@@ -793,6 +793,7 @@ ul {
   .footer__buttons {
     margin-top: 16px;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
   }
   .footer__links {
