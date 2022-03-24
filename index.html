@@ -11,20 +11,750 @@
 </head>
 
 <body>
-    <a class="app" href="#">
-        <div class="app__image">
-            <picture>
-                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
-                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
-                <img src="./images/apps/ir.android.baham_128x128.png" alt="با نزدیکا دوستهات رو پیدا کن">
-            </picture>
-        </div>
-        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
-        <div class="app__description">امور مالی</div>
-    </a>
 
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__content">
+                <div class="navbar__logo">
+                    <img src="images/bazaar-logo.svg" alt="">
+                </div>
+                <ul class="tab menu">
+                    <li class="tab__item tab__item--select">
+                        <a>برنامه</a>
+                    </li>
+                    <li class="tab__item">
+                        <a>بازی</a>
+                    </li>
+                    <li class="tab__item">
+                        <a>توسعه دهندگان بازار</a>
+                    </li>
+                    <li class="tab__item">
+                        <a>پشتیبانی</a>
+                    </li>
+                </ul>
+                <div id="BurgerMenu_toggler" class="navbar__menu-bar">
+                    <span class="icon-button">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <div class="navbar__fill-gap"></div>
+                <div class="navbar__search input">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="SearchInput__icon">
+                        <path
+                            d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z"
+                            fill="#717485"></path>
+                    </svg>
+                    <input aria-label="search" placeholder="جست‌وجو در بازار" type="text" />
+                </div>
+                <div>
+                    <span class="icon-button profile-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+
+                <a href="#" class="navbar__btn btn btn--primary ">
+                    دانلود بازار
+                </a>
+                <div class="more-icon">
+                    <span class="icon-button ">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </span>
+                </div>
+
+            </div>
+            <ul class="tab">
+                <li class="tab__item tab__item--select">
+                    <a>برای شما</a>
+                </li>
+                <li class="tab__item">
+                    <a>دسته بندی ها</a>
+                </li>
+                <li class="tab__item">
+                    <a>کودک</a>
+                </li>
+            </ul>
+        </div>
+        <div class="BurgerMenu  BurgerMenu--hidden">
+            <div class="BurgerMenu__logo">
+                <img src="images/bazaar-logo.svg" alt="">
+            </div>
+            <ul class="BurgerMenu__items">
+                <li class="BurgerMenu__item"><a href="#">توسعه دهندگان بازار</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">فرصت های شغلی</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">نشان دریافت از بازار</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">شرایط استفاده</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">شرایط استفاده</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">شرایط استفاده</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">شرایط استفاده</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+                <li class="BurgerMenu__item"><a href="#">شرایط استفاده</a>
+                    <span class="icon-button">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                </li>
+            </ul>
+            <div class="BurgerMenu__footer">
+                <div>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <article class="card desktop_only">
+            <main class="card__body">
+                <p>
+                    برنامه ها
+                </p>
+            </main>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <div class="card__title">برنامه های پیشنهادی برای شما</div>
+                <a href="#" class="card__action">بیشتر</a>
+            </header>
+            <main class="card__body">
+                <div class="app-list">
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                </div>
+            </main>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <div class="card__title">برنامه های پیشنهادی برای شما</div>
+                <a href="#" class="card__action">بیشتر</a>
+            </header>
+            <main class="card__body">
+                <div class="app-list">
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                </div>
+            </main>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <div class="card__title">برنامه های پیشنهادی برای شما</div>
+                <a href="#" class="card__action">بیشتر</a>
+            </header>
+            <main class="card__body">
+                <div class="app-list">
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                    <a class="app" href="#">
+                        <div class="app__image">
+                            <picture>
+                                <source type="image/png" srcset="./images/apps/ir.android.baham_128x128.png">
+                                <source type="image/png" srcset="./images/apps/com.nazdika.app_512x512.png">
+                                <img src="./images/apps/ir.android.baham_128x128.png"
+                                    alt="با نزدیکا دوستهات رو پیدا کن">
+                            </picture>
+                        </div>
+                        <div class="app__title">آپ - اپلیکیشن پرداخت همراه</div>
+                        <div class="app__description">امور مالی</div>
+                    </a>
+                </div>
+            </main>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <div class="card__title">برنامه های پیشنهادی برای شما</div>
+                <a href="#" class="card__action">بیشتر</a>
+            </header>
+            <main class="card__body">
+                <div class="app-list">
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                    <a title="off" href="#" class="banner">
+                        <img src="https://picsum.photos/420/210" alt="">
+                    </a>
+                </div>
+            </main>
+        </article>
+        <section class="card">
+            <header class="card__header">
+                <div class="card__title">دسته‌بندی‌های برنامه</div>
+                <a href="#" class="card__action">بیشتر</a>
+            </header>
+            <main class="card__body">
+                <div class="grid3-2">
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                            <div class="category-item__text">سرگرمی</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="category-item__text">آموزش</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="category-item__text">خرید</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-brands fa-gratipay"></i></div>
+                            <div class="category-item__text">شبکه های اجتماعی</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-solid fa-photo-film"></i></div>
+                            <div class="category-item__text">عکاسی و ویدیو</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                    <a href="#" class="card card--hover category-item">
+                        <main class="card__body category-item__body">
+                            <div class="category-item__icon"><i class="fa-solid fa-coins"></i></div>
+                            <div class="category-item__text">امور مالی</div>
+                            <div class="ctegory-item__arrow"><i class="fa-solid fa-arrow-left"></i></div>
+                        </main>
+                    </a>
+                </div>
+            </main>
+        </section>
+        <section class="card">
+            <div class="card__body">
+                <div class="collapsible">
+                    <div class="collapsible__container">
+                        <div>
+                            <p>به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر نمی‌زنید؟ آیا به‌دنبال
+                                <strong>دانلود برنامه‌های اندرویدی</strong> نیستید که کارهایتان را آسان‌تر کنند؟ ما در
+                                بازار <strong>اپلیکیشن‌های اندروید</strong>، برای هر موضوعی که در ذهن شماست، برنامه
+                                داریم و امکان نصب و دانلود آن‌ها را با اینترنت نیم‌بها و با سپر امنیت بازار برایتان
+                                فراهم کرده‌ایم.
+                            </p>
+
+                            <p>اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه آن‌ها را برایتان معرفی
+                                می‌کنیم. کافی است موضوع مورد علاقه‌ی خود را انتخاب کنید و از بین صدها برنامه هر دسته،
+                                بهترین و کاربردی‌ترین اپ را دانلود کنید. فراموش نکنید که حتما به نظرات و امتیازی
+                                (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید تا حافظه موبایل‌تان را با اپ‌های
+                                بهتری پر کنید.</p>
+
+                            <p>&nbsp;</p>
+
+                            <h2><strong>دانلود برنامه‌های جدید اندرویدی</strong></h2>
+
+                            <p>در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و همینطور بروزرسانی‌های منتخب
+                                را ببینید و از هیچ برنامه جدیدی جا نمانید. بازی‌های جدید نیز در صفحه بازی‌های اندرویدی
+                                بازار به‌همین ترتیب مشخص هستند.</p>
+
+                            <h2><strong>برنامه‌های شبکه‌های اجتماعی</strong></h2>
+
+                            <p>امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی امکان‌پذیر مثل واتساپ،
+                                اینستاگرام، تلگرام، توییتر، یوتیوب و ... نیست. هر برنامه‌ای که دوست دارید را انتخاب و
+                                ارتباط با جهان را آغاز کنید. جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به محض
+                                انتشار، در بازار قرار می‌گیرند و از طریق اطلاع‌رسانی‌ها (نوتیفیکیشن) شما را مطلع
+                                می‌کنند.</p>
+
+                            <h2><strong>ابزارهای اندرویدی</strong></h2>
+
+                            <p>گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است. از ماشین حساب، زنگ،
+                                یادآور و تقویم گرفته تا ابزارهای افزایش سرعت گوشی، قفل برنامه‌ها، افزایش عمر باتری،
+                                ارزیابی سرعت و مصرف اینترنت، تبدیل واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه،
+                                ساخت نسخه‌ی پشتیبان، دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی ابری و بسیاری برنامه‌ی
+                                پرکاربرد دیگر.</p>
+
+                            <h2><strong>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</strong></h2>
+
+                            <p>اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده کنید، به دسته‌های
+                                شخصی‌سازی و عکاسی و ویدیو سر بزنید. اپلیکیشن‌های تصاویر پس زمینه، قفل‌ها و برترین‌
+                                برنامه‌های تغییر فضای گوشی را از دسته‌ی شخصی‌سازی نصب کنید. برنامه‌های ویرایش و ساخت
+                                عکس، ساخت ویدیو و چاپ عکس را نیز از دسته‌ي عکاسی و ویدیو دانلود کنید و دنیای فیلترها و
+                                ابزارهای تدوین را تجربه کنید.</p>
+
+                            <p>از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به سبک خود تغییر دهید. مثلا
+                                زنگ گوشی، پس زمینه و صفحه کلید شخصی خود را دانلود کنید و با قفل فایل‌ها و برنامه‌ها
+                                کنترل موبایل خود را به دست بگیرید.</p>
+
+                            <h2><strong>برنامه‌های امور مالی</strong></h2>
+
+                            <p>حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی امور مالی برنامه‌های
+                                کاربردی‌ای مثل رمز پویا، روش‌های انتقال پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های
+                                تحلیلی بازار بورس و سرمایه‌گذاری، فروش سهام عدالت، قوانین مالی و محاسبات حقوقی، محاسبه
+                                سود سپرده و وام را پوشش می‌دهد. همینطور با کمک برنامه‌های حسابداری شخصی، تحلیل بازار
+                                بورس و مالی می‌توانید سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه کنید.</p>
+
+                            <h2><strong>اپ‌های آموزشی</strong></h2>
+
+                            <p>آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که بتوانند سریع‌ترین و شیرین‌ترین
+                                روش یادگیری موضوعات مثل زبان انگلیسی، آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و
+                                بسیاری موضوعات دیگر را در دسترس قرار دهند، بیشترین طرفدار را دارند. این دسته، دنیایی از
+                                اپلیکیشن‌هاست که می‌توانید با دانلود آن‌ها هر موضوعی را یاد بگیرید. معروف‌ترین و
+                                پرطرفدارترین برنامه این دسته هم اپلیکیشن شاد مدارس است که دانش‌آموزان علاقه زیادی به آن
+                                دارند.(!)</p>
+
+                            <h2><strong>برنامه‌های موسیقی و صداگذاری</strong></h2>
+
+                            <p>برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های روز متصل می‌کند. با کمک
+                                این اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های خود را بسازید، روی ویدیوهای خود صدا بگذارید و
+                                اپلیکیشن‌های تغییر صدای مختلف را ببینید.</p>
+
+                            <h2><strong>بازار کودک</strong></h2>
+
+                            <p>بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و برترین اپلیکیشن‌های کودک در
+                                دسته‌ی کودک بازار، ویژه کودکان شما است. امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل
+                                انکار است. از دسته‌ی کودک براحتی انتخاب کنید که دوست دارید کودک شما با کدام برنامه‌‌ی
+                                اندرویدی، بازی کند و یاد بگیرد.</p>
+
+                            <p>با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت گوشی هوشمند خود را در
+                                اختیار کودکان قرار دهید و خیالتان راحت باشد که محتواهای نامناسب برای فرزندتان نمایش داده
+                                نمی‌شود.</p>
+
+                            <h2><strong>اپ‌های سرگرمی</strong></h2>
+
+                            <p>داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست. برنامه‌های دسته‌ی سرگرمی
+                                طیف متفاوتی از اپلیکیشن‌هایی است که می‌توانید بسته به حال و لحظه از بین آنها انتخاب
+                                کنید؛ اهل نقاشی دیجیتال هستید؟ دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی که بخواهید را
+                                می‌توانید در این دسته‌بندی پیدا کنید.</p>
+
+                            <h2><strong>برنامه‌های ورزشی</strong></h2>
+
+                            <p>با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد. فوتبال، والیبال، لیگ برتر و
+                                جام حذفی، المپیک و حاشیه‌ی دنیای ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های
+                                اخبار و پخش زنده ورزشی، همه و همه در بازار موجود هستند.</p>
+
+                            <h2><strong>اپلیکیشن‌های مذهبی</strong></h2>
+
+                            <p>دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه را در خود جای داده است.
+                                برنامه‌های پرکاربرد مذهبی مانند تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های آموزش حفظ و
+                                تلاوت قرآن، قرآن کتبی و صوتی، برنامه‌های ختم قرآن و حکایت‌های مذهبی را در دسته‌ی مذهبی
+                                به راحتی پیدا و دانلود کنید.</p>
+
+                            <h2><strong>برنامه‌های سفر</strong></h2>
+
+                            <p>بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که سفر کردن را
+                                راحت‌ترمی‌کند. خرید بلیط هواپیما و قطار تا انتخاب محل اقامت و تورهای مسافرتی، گردشگری و
+                                بوم‌گردی برنامه می‌خواهد. در این سفر برنامه‌های مسیریاب،</p>
+
+                            <p>از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با اپلیکیشن‌های تاکسی‌های
+                                آنلاین در شهر رفت و آمد کنید. با دانلود برنامه‌های نمایش خلافی خودرو و خدمات تعمیر
+                                خودرو، با خیال راحت بحران‌ها را مدیریت کنید.</p>
+
+                            <h2><strong>کتاب‌ها و مطبوعات اندرویدی</strong></h2>
+
+                            <p>اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما است. اپلیکیشن‌های
+                                پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز در این دسته جمع شده‌اند. برنامه‌های
+                                کتابگردی، پادکست‌ها، خرید آنلاین کتاب، اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و
+                                نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود کنید.</p>
+
+                            <h2><strong>برنامه‌های پزشکی و سلامت و تناسب اندام</strong></h2>
+
+                            <p>سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از سلامتی و اطلاعات پزشکی و
+                                گرفتن نوبت دکتر و کمک‌های اولیه یک پزشک همراه است. سلامت، برنامه‌ریزی هم می‌خواهد. با
+                                اپلیکیشن‌های دسته‌ی تناسب اندام به راحتی برای سلامتی و بدن خود برنامه بریزید. با دانلود
+                                برنامه‌های تغذیه و رژیم برای خود هدف گذاری کنید. راحت‌تر بخوابید، با برنامه پیاده‌روی
+                                کنید و تمرین‌های روزانه و بدن‌سازی و ورزش خود را با کارهای روزانه‌ای مانند خرید هفتگی و
+                                روزانه تنظیم کنید.</p>
+
+                            <h2><strong>برنامه‌های خرید اینترنتی </strong></h2>
+
+                            <p>برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی، گوشی، خانه و اتومبیل بخرید.
+                                آخرین و بهترین قیمت‌ها را رصد کنید و از بین هزاران کالای موجود در سراسر ایران انتخاب
+                                کنید.</p>
+
+                            <h2><strong>برنامه‌های آب‌ و هوا</strong></h2>
+
+                            <p>برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز هواشناسی قرار می‌دهد. در
+                                عین حال می‌توانید کیفیت هوای محل زندگی خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس
+                                از حوادثی مانند زلزله و سیل نیز نیاز به آموزش دارد که تمامی این اطلاعات در برنامه‌های
+                                این دسته در دسترس است.</p>
+
+                            <h2><strong>برنامه‌های آشپزی </strong>Android</h2>
+
+                            <p>آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر می‌شود. برنامه‌های آشپزی
+                                بازار برای هرسلیقه‌‌ای با هر میزان دسترسی به مواد غذایی دستور غذایی دارد. آنلاین با گوشی
+                                اندروید هوشمند خود مواد غذایی و میوه بخرید. با دستورهای جدید، پخت و پز کنید. با
+                                برنامه‌های آشپزی و رستوران، رستوران‌های جدید را بشناسید، غذا سفارش دهید و رستوران‌گردی
+                                کنید.</p>
+
+                            <h2><strong>اپلیکیشن‌های سبک زندگی</strong></h2>
+
+                            <p>هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های دسته‌ی سبک زندگی نیاز
+                                دارد. در دسته‌ی سبک زندگی می‌توانید برنامه‌های اندروید سلامت روان و خوشناسی را دانلود
+                                کنید؛ یا سری به برنامه‌های کاربردی بزنید و هر سرویس آنلاینی که در طول روز به آن نیاز
+                                دارید از خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا کنید.</p>
+                        </div>
+                    </div>
+                    <div class="collapsible__expand">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
     <script src="https://kit.fontawesome.com/5a4b958152.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 
 </html>
