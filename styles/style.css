@@ -439,14 +439,14 @@ ul {
   color: unset;
   text-decoration: none;
 }
-.BurgerMenu__.footer {
+.BurgerMenu__footer {
   bottom: 0;
   display: flex;
   font-size: 2rem;
   gap: 30px;
   justify-content: center;
   left: 0;
-  position: absolute;
+  position: sticky;
   right: 0;
 }
 @media screen and (min-width: 1024px) {
